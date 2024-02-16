@@ -1,15 +1,15 @@
-# Class with getString and printString methods
-class StringManipulator:
+# 1
+class String:
     def __init__(self):
-        self.input_string = ""
+        self.string = ""
 
     def getString(self):
-        self.input_string = input("Enter a string: ")
+        self.string = input("Enter a string: ")
 
     def printString(self):
-        print(self.input_string.upper())
+        print(self.string.upper())
 
-# Shape and Square classes
+# 2
 class Shape:
     def area(self):
         return 0
@@ -21,7 +21,7 @@ class Square(Shape):
     def area(self):
         return self.length ** 2
 
-# Rectangle class inheriting from Shape
+# 3
 class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
